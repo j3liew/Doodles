@@ -1,3 +1,3 @@
 # Doodles
 
-Found it.
+For code practice.
