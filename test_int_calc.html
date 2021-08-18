@@ -11,10 +11,10 @@
                 var interest = principal*years*rate/100;
                 var year = new Date().getFullYear()+parseInt(years);
     
-                var principalHTML = "<br> If you deposit <span style='background-color: yellow;'>"+principal+"</span>";
-                var rateHTML = ",<br>at an interest of <span style='background-color: yellow;'>"+rate+"%</span>";
-                var interestHTML = ",<br>you will receive an amount of <span style='background-color: yellow;'>"+interest+"</span>";
-                var yearHTML = ",<br>in the year <span style='background-color: yellow;'>"+year+"</span>";
+                var principalHTML = "<br> If you deposit <span style='background-color:yellow;'>"+principal+"</span>";
+                var rateHTML = ",<br>at an interest of <span style='background-color:yellow;'>"+rate+"%</span>";
+                var interestHTML = ",<br>you will receive an amount of <span style='background-color:yellow;'>"+interest+"</span>";
+                var yearHTML = ",<br>in the year <span style='background-color:yellow;'>"+year+"</span>";
 
                 document.getElementById("result").innerHTML = principalHTML+rateHTML+interestHTML+yearHTML;
             }
@@ -38,7 +38,7 @@
                 return true;
             }
         </script>
-        <title>Simple Interest Calculator</title>
+        <title>Web App - Simple Interest Calculator</title>
     </head>
     <body style="background-color: black; font-family: arial, sans-serif; color: white;">
         <div class="maindiv" style="background-color: white; color: black; width: 300px; padding: 20px; border-radius: 25px;">
@@ -47,7 +47,7 @@
             <div class="nestdiv" style="margin: auto; width: 50%;">
                 Amount <input type="number" id="principal">
                 <br><br>
-                Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+                Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()">
                 <span id="rate_val">10.25%</span>
                 <br><br>
                 No. of Years <select id="years">
